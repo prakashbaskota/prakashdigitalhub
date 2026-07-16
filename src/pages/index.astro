@@ -13,7 +13,8 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Prakash Digital Hub',
+  title: 'Prakash Baskota | IT Infrastructure Engineer | Microsoft 365 & Network Specialist',
+  description: 'Professional IT consultant specializing in Microsoft 365, Windows Server, network infrastructure, cybersecurity, backup solutions, and web development.',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,77 +26,72 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/Prakash Digital Hub',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Hire Me',
+        href: '#contact',
+        icon: 'tabler:briefcase',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'View My Work', href: '#projects' },
+      { text: 'Download CV', href: '#', icon: 'tabler:download' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'Prakash Digital Hub Hero Image' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Prakash Baskota IT Solutions' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro v6</span> + Tailwind CSS
+      Building Secure, Reliable & Modern
+      <span class="text-accent dark:text-white"> IT Solutions</span> for Businesses
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">Prakash Digital Hub</span> is a free, customizable and production-ready template for Astro v6 +
-        Tailwind CSS v4.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">Prakash Digital Hub: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages & Blogs.
+      I help organizations design, manage, and optimize their IT infrastructure through enterprise networking, Microsoft 365 solutions, cybersecurity, backup strategies, and modern web technologies.
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
+  <Note title="Prakash Digital Hub" description="Secure Infrastructure. Reliable Technology. Digital Growth." />
 
   <!-- Features Widget *************** -->
 
   <Features
-    id="features"
-    tagline="Features"
-    title="What you get with Prakash Digital Hub"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023, 2024 and 2025."
+    id="services"
+    tagline="Professional Services"
+    title="Enterprise IT Solutions I Provide"
+    subtitle="Specialized expertise in infrastructure, networking, cloud services, security, and modern web development"
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'IT Infrastructure Management',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility. Now powered by Tailwind CSS v4.',
-        icon: 'tabler:brand-tailwind',
+          'Designing, maintaining, and supporting reliable enterprise IT environments including servers, workstations, applications, and business systems.',
+        icon: 'tabler:server-2',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Network Engineering',
         description:
-          'Widgets made with Tailwind CSS v4 ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Building secure and efficient network infrastructures that keep businesses connected and productive with LAN/WAN, VPN, and firewall solutions.',
+        icon: 'tabler:network',
       },
       {
-        title: 'Best Practices',
+        title: 'Microsoft 365 Solutions',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Helping organizations manage and optimize Microsoft cloud services for collaboration, communication, and security including Exchange, Teams, and SharePoint.',
+        icon: 'tabler:cloud',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Cybersecurity & Protection',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'Implementing security practices to protect business systems, users, and data through firewall management, access control, and endpoint security.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Backup & Disaster Recovery',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Creating reliable backup strategies to protect critical business information and ensure continuity with automated recovery planning.',
+        icon: 'tabler:database-backup',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Website Development',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Creating fast, modern, SEO-friendly websites using latest web technologies like Astro, Tailwind CSS, JavaScript, and deployed on Vercel.',
+        icon: 'tabler:code',
       },
     ]}
   />
@@ -104,33 +100,42 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="Prakash Digital Hub's Blueprint: Fun Meets Functionality!"
+    id="about"
+    tagline="About Me"
+    title="Experienced IT Professional & Solutions Architect"
     items={[
       {
-        title: 'Built on top of Astro v6',
+        title: 'Infrastructure Expertise',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Deep hands-on experience managing enterprise IT environments including Windows Server, Active Directory, DNS, DHCP, and business-critical applications.',
       },
       {
-        title: 'Styled using Tailwind CSS v4',
+        title: 'Cloud & Modern Technologies',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Specialized knowledge in Microsoft 365 administration, cloud infrastructure, backup solutions, and modern development practices.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Security & Reliability',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Committed to building secure, reliable, and scalable technology solutions that reduce operational challenges and improve business productivity.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'IT Professional Solutions',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About Prakash Baskota</h3>
+      <p class="text-lg mb-4">
+        I am an experienced IT professional specializing in infrastructure management, system administration, network engineering, Microsoft 365 administration, cybersecurity, and web development.
+      </p>
+      <p class="text-lg mb-4">
+        My experience includes managing enterprise IT environments, Windows Server infrastructure, Active Directory, Microsoft cloud services, firewall solutions, backup systems, and business-critical applications.
+      </p>
+      <p class="text-lg">
+        Beyond IT infrastructure, I enjoy developing modern websites and digital solutions using current technologies such as Astro, Tailwind CSS, JavaScript, GitHub, and Vercel. Available for remote IT consulting and technical support worldwide with flexible support for international clients.
+      </p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -142,33 +147,35 @@ const metadata = {
 
   <Content
     isAfterContent
+    tagline="Why Work With Me"
+    title="Benefits of Partnering with Prakash Digital Hub"
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Reliable',
+        description: 'Focused on building stable and secure IT environments that you can depend on.',
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Experienced',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Hands-on experience solving real business IT challenges with proven methodologies.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Security Focused',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          'Following industry best practices for protecting business systems, data, and user information.',
       },
       {
-        title: 'Integration of media',
+        title: 'Continuous Learning',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Always improving knowledge with modern technologies and emerging industry standards.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Professional Services',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">Trusted Partner for Your IT Infrastructure Needs</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -180,33 +187,35 @@ const metadata = {
   <Content
     isReversed
     isAfterContent
+    id="projects"
+    tagline="Featured Projects"
+    title="Real-World Solutions & Case Studies"
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Enterprise IT Infrastructure Management',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'Managed enterprise IT environments including Windows Server, Active Directory, network infrastructure, user management, security policies, and troubleshooting.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Microsoft 365 Administration',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Implemented and managed Microsoft 365 services including user accounts, Exchange Online, Teams, OneDrive, SharePoint, licensing, and security configurations.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Network Security & Firewall Management',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with Prakash Digital Hub.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing Prakash Digital Hub community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+          'Configured and maintained secure network environments using firewall policies, VPN solutions, and network monitoring practices.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'IT Projects & Solutions',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Proven Project Experience</h3>
+      I deliver measurable results through strategic planning, expert implementation, and ongoing optimization.
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -216,93 +225,96 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with Prakash Digital Hub."
+    id="experience"
+    title="My Professional Engagement Process"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Assessment & Consultation</span>',
         description:
-          "Kickstart with GitHub! Either fork the Prakash Digital Hub template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          "In-depth analysis of your current IT infrastructure, systems, and business requirements. I evaluate gaps, identify opportunities, and understand your specific objectives.",
+        icon: 'tabler:search',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Strategy & Planning</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          'Development of comprehensive roadmap aligned with your business goals. Detailed planning ensures efficient resource allocation, minimized downtime, and optimal outcomes.',
+        icon: 'tabler:layout-kanban',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Implementation & Deployment</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by Prakash Digital Hub! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'Precise execution of planned solutions with meticulous attention to detail. Seamless deployment minimizes disruption to your business operations.',
+        icon: 'tabler:cog',
       },
       {
-        title: 'Ready!',
-        icon: 'tabler:check',
+        title: 'Step 4: <span class="font-medium">Monitoring & Optimization</span>',
+        description:
+          'Continuous monitoring and optimization ensures peak performance. Proactive support identifies and resolves issues before they impact your business.',
+        icon: 'tabler:chart-line',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Professional IT Services Workflow',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS v4"
-    tagline="Components"
+    id="skills"
+    title="Technical Skills & Proficiency"
+    subtitle="Expert-level capabilities across infrastructure, networking, cloud services, and modern web development"
+    tagline="Technical Expertise"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
+        title: 'Infrastructure Management',
+        description: 'Windows Server, Active Directory, Group Policy, DNS, DHCP, File Services, System Administration',
+        icon: 'tabler:server-2',
       },
       {
-        title: 'Heros',
+        title: 'Networking',
         description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
+          'TCP/IP, LAN/WAN, VLAN, VPN, Firewall Management, Routing, Switching, Network Design',
+        icon: 'tabler:network',
       },
       {
-        title: 'Features',
+        title: 'Microsoft 365',
         description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
+          'Exchange Online, Teams, SharePoint, OneDrive, Azure AD, User Management, Licensing, Security',
+        icon: 'tabler:cloud',
       },
       {
-        title: 'Content',
+        title: 'Cybersecurity',
         description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
+          'Firewall Configuration, Access Control, Endpoint Security, Backup Security, Security Monitoring',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Call-to-Action',
+        title: 'Backup & Disaster Recovery',
+        description: 'Server Backup, Microsoft 365 Backup, Recovery Planning, Automation, Business Continuity',
+        icon: 'tabler:database-backup',
+      },
+      {
+        title: 'Web Development',
         description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
+          'HTML/CSS, JavaScript, Astro Framework, Tailwind CSS, GitHub, Vercel, Web Performance, SEO',
+        icon: 'tabler:code',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
+        title: 'Cloud Platforms',
+        description: 'Microsoft Azure, AWS Services, Cloud Migration, Infrastructure as Code, Cloud Security',
+        icon: 'tabler:cloud-upload',
       },
       {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
+        title: 'DevOps & Automation',
+        description: 'CI/CD Pipelines, Infrastructure Automation, Containerization, Configuration Management',
+        icon: 'tabler:robot',
       },
       {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
+        title: 'Monitoring & Analytics',
+        description: 'System Monitoring, Log Management, Performance Analytics, Alerting, Reporting',
+        icon: 'tabler:chart-line',
       },
     ]}
   >
@@ -314,50 +326,58 @@ const metadata = {
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display Prakash Digital Hub documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro v6 + Tailwind CSS v4.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    title="Project Highlights & Case Studies"
+    information={`Portfolio of successful IT infrastructure projects, network implementations, Microsoft 365 migrations, and modern website developments. Each project demonstrates expertise in designing and deploying enterprise-grade solutions.`}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
+    id="faq"
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that Prakash Digital Hub offers and how it can elevate your web development journey."
+    subtitle="Find answers to common questions about my IT consulting services, expertise, and engagement process."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why Prakash Digital Hub?',
+        title: 'What services do you provide?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'I provide comprehensive IT consulting including infrastructure management, network engineering, Microsoft 365 administration, cybersecurity, backup solutions, disaster recovery planning, and modern website development.',
       },
       {
-        title: 'What do I need to start?',
+        title: 'Do you offer remote support?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'Yes, I am available for remote IT consulting and technical support worldwide. I offer flexible support for international clients across different time zones.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'What is your experience level?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'I have extensive hands-on experience managing enterprise IT environments including Windows Server infrastructure, Active Directory, network design, Microsoft cloud services, and security implementations.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'How do you approach new projects?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'I follow a structured approach: Assessment & Consultation → Strategy & Planning → Implementation & Deployment → Monitoring & Optimization. This ensures solutions align with your business objectives.',
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'What technologies do you specialize in?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          'I specialize in Windows Server, Active Directory, Microsoft 365, network infrastructure, cybersecurity, backup solutions, cloud platforms, and modern web development using Astro and Tailwind CSS.',
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'Can you help with Microsoft 365 migration?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'Yes, I have extensive experience with Microsoft 365 implementations including Exchange Online, Teams, SharePoint, OneDrive, user management, licensing, and security configurations.',
+      },
+      {
+        title: 'What makes you different?',
+        description:
+          'I combine enterprise IT infrastructure expertise with modern web development skills. This full-stack technical knowledge allows me to provide comprehensive solutions and better understand business requirements.',
+      },
+      {
+        title: 'How do I get started?',
+        description:
+          'Contact me to schedule a consultation. I will assess your current infrastructure, discuss your business objectives, and provide a tailored proposal for your needs.',
       },
     ]}
   />
@@ -366,33 +386,39 @@ const metadata = {
 
   <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'Years Experience', amount: '10+' },
+      { title: 'Projects Completed', amount: '50+' },
+      { title: 'Business Clients', amount: '30+' },
+      { title: 'Uptime Delivered', amount: '99.9%' },
     ]}
   />
 
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
+    id="contact"
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/Prakash Digital Hub',
+        text: 'Schedule Consultation',
+        href: 'mailto:contact@prakashdigitalhub.com',
+        icon: 'tabler:mail',
+      },
+      {
+        variant: 'secondary',
+        text: 'View LinkedIn',
+        href: 'https://linkedin.com/in/prakashbaskota',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:brand-linkedin',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Ready to Transform Your IT Infrastructure?
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Contact me today to discuss your business challenges and how I can deliver secure, reliable technology solutions that drive growth.
     </Fragment>
   </CallToAction>
 </Layout>
