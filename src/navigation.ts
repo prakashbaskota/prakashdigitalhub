@@ -78,7 +78,10 @@ export const footerData = {
     { ariaLabel: 'WhatsApp', icon: 'tabler:brand-whatsapp', href: 'https://wa.me/910000000' },
   ],
   footNote: `
-    <strong>Prakash Digital Hub</strong> · Professional IT Solutions & Web Development · All rights reserved. 
-    <br><span class="text-sm">Secure Infrastructure. Reliable Technology. Digital Growth.</span>
+    <div class="flex flex-col gap-1 md:flex-row md:items-center md:gap-4">
+      <span>© 2026 Prakash Digital Hub. All rights reserved.</span>
+      <span class="text-slate-400">Designed by Prakash Baskota</span>
+    </div>
+    <div class="mt-1 text-sm text-slate-400">Secure Infrastructure. Reliable Technology. Digital Growth.</div>
   `,
 };
