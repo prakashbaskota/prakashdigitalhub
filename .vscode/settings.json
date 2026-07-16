@@ -11,5 +11,8 @@
   "yaml.schemas": {
     "./.vscode/astrowind/config-schema.json": "/src/config.yaml"
   },
-  "eslint.useFlatConfig": true
+  "eslint.useFlatConfig": true,
+  "chat.tools.terminal.autoApprove": {
+    "Set-ExecutionPolicy": true
+  }
 }
