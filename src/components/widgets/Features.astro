@@ -34,26 +34,25 @@ const columnsClass =
 
   {
     items.length > 0 && (
-      <div class:list={['grid mx-auto gap-8 md:gap-y-12', columnsClass]}>
+      <div class:list={['grid mx-auto gap-8 md:gap-y-10', columnsClass]}>
         {items.map(({ title: itemTitle, description, icon, callToAction }) => (
-          <div class="intersect-once motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
-            <div class="flex flex-row max-w-md">
-              {(icon || defaultIcon) && (
-                <div class="flex justify-center">
-                  <Icon
-                    name={icon || defaultIcon}
-                    class="w-7 h-7 mr-2 rtl:mr-0 rtl:ml-2 text-white bg-primary rounded-full md:w-12 md:h-12 md:p-3 p-2 mr-4 rtl:ml-4 rtl:mr-0"
-                  />
-                </div>
-              )}
-              <div class="mt-0.5">
-                {itemTitle && <h3 class="text-xl md:text-[1.3rem] font-bold">{itemTitle}</h3>}
-                {description && <p class:list={[{ 'mt-3': itemTitle }, 'text-muted']} set:html={description} />}
-                {callToAction && (
-                  <div class:list={[{ 'mt-3': itemTitle || description }]}>
-                    <Button variant="link" {...callToAction} />
+          <div class="intersect-once motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade h-full">
+            <div class="group h-full rounded-3xl border border-slate-200/70 bg-white/80 p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-primary/40 hover:shadow-2xl dark:border-slate-700 dark:bg-slate-900/70">
+              <div class="flex items-start gap-4">
+                {(icon || defaultIcon) && (
+                  <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary shadow-sm transition-transform duration-300 group-hover:scale-110">
+                    <Icon name={icon || defaultIcon} class="h-6 w-6" />
                   </div>
                 )}
+                <div class="min-w-0 flex-1">
+                  {itemTitle && <h3 class="text-xl font-bold text-slate-900 transition-colors duration-300 group-hover:text-primary dark:text-white">{itemTitle}</h3>}
+                  {description && <p class:list={[{ 'mt-3': itemTitle }, 'text-muted leading-relaxed']} set:html={description} />}
+                  {callToAction && (
+                    <div class:list={[{ 'mt-4': itemTitle || description }]}>
+                      <Button variant="link" {...callToAction} />
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>
