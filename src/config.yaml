@@ -1,6 +1,6 @@
 site:
   name: Prakash Digital Hub
-  site: 'https://astrowind.vercel.app'
+  site: 'https://prakashdigitalhub.vercel.app/'
   base: '/'
   trailingSlash: false
 
